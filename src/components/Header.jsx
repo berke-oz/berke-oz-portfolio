@@ -11,10 +11,10 @@ const Header = () => {
     return (
         <header className={`p-7 ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'} pr-45`}>
             <div className="container mx-auto flex flex-col">
-                {/* Üst Kısım: Toggle Butonu ve Dil Seçeneği */}
+
                 <div className="flex justify-end items-center font-mono font-bold text-gray-600 pt-[23px]">
                     <div className="flex items-center space-x-1">
-                        {/* Toggle Butonu ve DARK MODE Metni */}
+
                         <div className="flex items-center space-x-2">
                             <div
                                 className="w-14 h-8 flex items-center rounded-full p-1"
@@ -29,10 +29,10 @@ const Header = () => {
                             <span>{currentLanguage.header.darkMode}</span>
                         </div>
 
-                        {/* Dikey Ayırıcı Çizgi */}
+
                         <span>|</span>
 
-                        {/* Dil Seçeneği ve GEÇ Butonu */}
+
                         <div className="flex items-center gap-1">
                             <span
                                 className="hover:text-blue-700 transition-colors duration-300"
@@ -47,7 +47,7 @@ const Header = () => {
                     </div>
                 </div>
 
-                {/* Alt Kısım: Butonlar */}
+
                 <div className="ml-auto flex items-center pt-8 space-x-8 text-black">
                     <button
                         className="p-2 w-25 bg-white rounded-lg border-2 border-transparent hover:border-[#5540d6] hover:text-[#5540d6] transition-colors duration-300"

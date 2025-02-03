@@ -6,7 +6,7 @@ const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
     const [isDarkMode, setIsDarkMode] = useState(false);
-    const [language, setLanguage] = useState('en');
+    const [language, setLanguage] = useState('tr');
 
     const toggleDarkMode = () => setIsDarkMode(prev => !prev);
     const toggleLanguage = () => setLanguage(prev => (prev === 'tr' ? 'en' : 'tr'));
