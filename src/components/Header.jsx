@@ -40,6 +40,7 @@ const Header = () => {
                 {/* Alt Kısım: Butonlar */}
                 <div className="ml-auto flex items-center pt-8 space-x-8 text-black">
                     {/* Butonlar */}
+
                     <button className="p-2 w-25 bg-white rounded-lg border-2 border-transparent hover:border-[#5540d6] hover:text-[#5540d6] transition-colors duration-300">
                         Skills
                     </button>

@@ -2,10 +2,17 @@ import React from 'react';
 
 const Hero = () => {
     return (
-        <div className="min-h-screen flex items-center bg-white-100 pl-[125px] pt-3 pb-45">
+        <div className="min-h-screen flex items-center bg-white-100 pl-[125px] pt-3 pb-32">
             {/* Metin ve Butonlar */}
+
+
+
             <div className="text-left pr-20 ">
                 {/* İsim ve Başlık */}
+                <div className="flex items-center space-x-4 mb-15">
+                    <div className="w-30 h-[2px] bg-[#3730A3]"></div> {/* Düz çizgi */}
+                    <span className="text-[20px] text-[#4338CA] font-semibold ">Berke Öz</span>
+                </div>
                 <h1 className="text-7xl font-bold text-gray-900 mb-2">Creative thinker</h1>
                 <h1 className="text-7xl font-bold text-gray-900 mb-12">Minimalism lover</h1>
 
@@ -31,7 +38,7 @@ const Hero = () => {
             {/* Resim */}
             <div className="w-[476px] h-[375px] rounded-xl overflow-hidden  ">
                 <img
-                    src="./images/software-nedir.jpg" // Resim URL'si (örnek)
+                    src=".\images\nQzb7Aej_400x400.jpg"
                     alt="Aimila Su"
                     className="w-full h-full object-cover"
                 />
