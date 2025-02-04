@@ -1,3 +1,16 @@
+import mail_icon from "/images/phone-png-3.png"
+import myphoto from "/images/nQzb7Aej_400x400.jpg"
+import github_icon from "/images/github.png"
+import linkedin_icon from "/images/LinkedIn.png"
+import js_icon from "/images/js-logo 1.png"
+import figma_icon from "/images/figma-logo 1.png"
+import nodejs_icon from "/images/node-logo 1.png"
+import react_icon from "/images/Rectangle 35.png"
+import redux_icon from "/images/Group 101.png"
+import vscode_icon from "/images/Group 101 (1).png"
+import teknolojikyemekler from "/images/teknolojik-yemekler-website.png"
+import witflix from "/images/witflix.png"
+
 const data = {
     tr: {
         header: {
@@ -15,6 +28,7 @@ const data = {
         },
         hero: {
             name: "Berke Öz",
+            photo: myphoto,
             title1: "Kahve Sever",
             title2: "Yaratıcı Düşünür",
             description:
@@ -24,19 +38,19 @@ const data = {
                     name: "İletişim",
                     key: "hireMe",
                     link: "mailto:beerkeozz@outlook.com",
-                    icon: "./images/phone-png-3.png"
+                    icon: mail_icon
                 },
                 {
                     name: "Github",
                     key: "github",
                     link: "https://github.com/berke-oz",
-                    icon: "./images/github.png"
+                    icon: github_icon
                 },
                 {
                     name: "Linkedin",
                     key: "linkedin",
                     link: "https://www.linkedin.com/in/berkeozz/",
-                    icon: "./images/LinkedIn.png"
+                    icon: linkedin_icon
                 }
             ]
         },
@@ -45,27 +59,27 @@ const data = {
             "skillsList": [
                 {
                     "name": "JavaScript",
-                    "logo": "./images/js-logo 1.png"
+                    "logo": js_icon
                 },
                 {
                     "name": "Figma",
-                    "logo": "./images/figma-logo 1.png"
+                    "logo": figma_icon
                 },
                 {
                     "name": "Node.js",
-                    "logo": "./images/node-logo 1.png"
+                    "logo": nodejs_icon
                 },
                 {
                     "name": "React",
-                    "logo": "./images/Rectangle 35.png"
+                    "logo": react_icon
                 },
                 {
                     "name": "Redux",
-                    "logo": "./images/Group 101.png"
+                    "logo": redux_icon
                 },
                 {
                     "name": "VsCode",
-                    "logo": "./images/Group 101 (1).png"
+                    "logo": vscode_icon
                 }
             ]
         },
@@ -96,7 +110,7 @@ const data = {
                 {
                     name: "Teknolojik Yemekler",
                     description: "Bu projede, React, JavaScript ve CSS kullanarak Teknoloji-Yemekler adında statik bir yemek sipariş websitesi geliştirdim. Projemde yer alan her aşama, web geliştirme konusunda yeteneklerimi geliştirmeme büyük katkı sağladı.",
-                    image: "./images/teknolojik-yemekler-website.png",
+                    image: teknolojikyemekler,
                     tools: ["React.js", "CSS", "Cypress"],
                     github: "https://github.com/berke-oz/teknolojik-yemekler-website",
                     website: "https://teknolojik-yemekler-website-8g91.vercel.app/",
@@ -104,7 +118,7 @@ const data = {
                 {
                     name: "Witflix",
                     description: "Witflix, temel olarak statik bir site olarak geliştirilmiş, Netflix'e benzer bir platformdur. HTML ve CSS kullanarak tasarladığım bu proje, basit ama kullanıcı dostu bir arayüz sunmayı amaçladı. Witflix, içerikleri statik bir şekilde görüntüler ve kullanıcılara film ve dizi seçenekleri sunar. Proje, benim için front-end geliştirme becerilerimi geliştirdiğim ilk adımlardan biri oldu.",
-                    image: "./images/witflix.png",
+                    image: witflix,
                     tools: ["HTML", "CSS",],
                     github: "https://github.com/berke-oz/WitFlix",
                     website: "",
@@ -140,6 +154,7 @@ const data = {
         },
         hero: {
             name: "Berke Öz",
+            photo: myphoto,
             title1: "Coffee Lover",
             title2: "Creative Thinker",
             description:
@@ -149,19 +164,19 @@ const data = {
                     name: "Hire Me",
                     key: "hireMe",
                     link: "mailto:beerkeozz@outlook.com",
-                    icon: "./images/phone-png-3.png"
+                    icon: mail_icon
                 },
                 {
                     name: "Github",
                     key: "github",
                     link: "https://github.com/berke-oz",
-                    icon: "./images/github.png"
+                    icon: github_icon
                 },
                 {
                     name: "Linkedin",
                     key: "linkedin",
                     link: "https://www.linkedin.com/in/berkeozz/",
-                    icon: "./images/LinkedIn.png"
+                    icon: linkedin_icon
                 }
             ]
         },
@@ -170,27 +185,27 @@ const data = {
             "skillsList": [
                 {
                     "name": "JavaScript",
-                    "logo": "./images/js-logo 1.png"
+                    "logo": js_icon
                 },
                 {
                     "name": "Figma",
-                    "logo": "./images/figma-logo 1.png"
+                    "logo": figma_icon
                 },
                 {
                     "name": "Node.js",
-                    "logo": "./images/node-logo 1.png"
+                    "logo": nodejs_icon
                 },
                 {
                     "name": "React",
-                    "logo": "./images/Rectangle 35.png"
+                    "logo": react_icon
                 },
                 {
                     "name": "Redux",
-                    "logo": "./images/Group 101.png"
+                    "logo": redux_icon
                 },
                 {
                     "name": "VsCode",
-                    "logo": "./images/Group 101 (1).png"
+                    "logo": vscode_icon
                 }
             ]
         },
@@ -221,7 +236,7 @@ const data = {
                 {
                     name: "Teknolojik Yemekler",
                     description: " In this project, I developed a static food ordering website called Teknoloji-Yemekler using React, JavaScript, and CSS. Each stage of the project greatly contributed to improving my skills in web development. ",
-                    image: "./images/teknolojik-yemekler-website.png",
+                    image: teknolojikyemekler,
                     tools: ["React.js", "CSS", "Cypress"],
                     github: "https://github.com/berke-oz/teknolojik-yemekler-website",
                     website: "https://teknolojik-yemekler-website-8g91.vercel.app",
@@ -229,7 +244,7 @@ const data = {
                 {
                     name: "Witflix",
                     description: "Witflix is essentially a static site developed as a platform similar to Netflix. Designed using HTML and CSS, this project aimed to provide a simple yet user-friendly interface. Witflix displays content statically and offers users movie and series options. The project was one of the first steps in developing my front-end development skills .",
-                    image: "./images/witflix.png",
+                    image: witflix,
                     tools: ["HTML", "CSS",],
                     github: "https://github.com/berke-oz/WitFlix",
                     website: "",

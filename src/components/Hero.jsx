@@ -53,7 +53,7 @@ const Hero = () => {
 
             <div className="w-[476px] h-[375px] rounded-xl overflow-hidden">
                 <img
-                    src="./images/nQzb7Aej_400x400.jpg"
+                    src={currentLanguage.photo}
                     alt="Berke"
                     className="w-full h-full object-cover"
                 />
