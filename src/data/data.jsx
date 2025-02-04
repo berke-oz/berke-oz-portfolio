@@ -112,6 +112,15 @@ const data = {
 
             ],
         },
+        footer: {
+            text: "Birlikte çalışalım ve harika ürünler ortaya çıkaralım.",
+            email: "beerkeozz@outlook.com",
+            socialLinks: [
+                { name: "Kişisel Blog", url: "#" },
+                { name: "Github", url: "https://github.com/berke-oz" },
+                { name: "Linkedin", url: "https://www.linkedin.com/in/berkeozz/" }
+            ]
+        }
 
     },
     en: {
@@ -219,13 +228,23 @@ const data = {
                     name: "Witflix",
                     description: "Witflix is essentially a static site developed as a platform similar to Netflix. Designed using HTML and CSS, this project aimed to provide a simple yet user-friendly interface. Witflix displays content statically and offers users movie and series options. The project was one of the first steps in developing my front-end development skills .",
                     image: "./images/witflix.png",
-                    tools: ["Node.js", "Express", "MongoDB"],
+                    tools: ["HTML", "CSS",],
                     github: "https://github.com/berke-oz/WitFlix",
                     website: "",
                 },
 
             ],
         },
+
+        footer: {
+            text: "Let's work together to build amazing products.",
+            email: "beerkeozz@outlook.com",
+            socialLinks: [
+                { name: "Personal Blog", url: "#" },
+                { name: "Github", url: "https://github.com/berke-oz" },
+                { name: "Linkedin", url: "https://www.linkedin.com/in/berkeozz/" }
+            ]
+        }
     },
 
 };

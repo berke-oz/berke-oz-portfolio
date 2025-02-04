@@ -9,7 +9,7 @@ const Header = () => {
     const currentLanguage = data[language];
 
     return (
-        <header className={`p-7 ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'} pr-45`}>
+        <header className={`p-7 ${isDarkMode ? 'bg-[#252128]' : 'bg-white text-gray-900'} pr-45`}>
             <div className="container mx-auto flex flex-col">
 
                 <div className="flex justify-end items-center font-mono font-bold text-gray-600 pt-[23px]">
@@ -48,23 +48,36 @@ const Header = () => {
                 </div>
 
 
-                <div className="ml-auto flex items-center pt-8 space-x-8 text-black">
+                <div className="ml-auto flex items-center pt-8 space-x-8">
                     <button
-                        className="p-2 w-25 bg-white rounded-lg border-2 border-transparent hover:border-[#5540d6] hover:text-[#5540d6] transition-colors duration-300"
+                        className={`p-2 w-25 rounded-lg border-2 transition-colors duration-300 
+            ${isDarkMode
+                                ? 'bg-[#252128] text-[#6B7280] border-transparent hover:bg-white hover:text-[#3730A3] hover:border-[#3730A3]'
+                                : 'bg-white text-black border-transparent hover:border-[#5540d6] hover:text-[#5540d6]'
+                            }`}
                     >
                         {currentLanguage.header.buttons.skills}
                     </button>
                     <button
-                        className="p-2 w-25 bg-white rounded-lg border-2 border-transparent hover:border-[#5540d6] hover:text-[#5540d6] transition-colors duration-300"
+                        className={`p-2 w-25 rounded-lg border-2 transition-colors duration-300 
+            ${isDarkMode
+                                ? 'bg-[#252128] text-[#6B7280] border-transparent hover:bg-white hover:text-[#3730A3] hover:border-[#3730A3]'
+                                : 'bg-white text-black border-transparent hover:border-[#5540d6] hover:text-[#5540d6]'
+                            }`}
                     >
                         {currentLanguage.header.buttons.projects}
                     </button>
                     <button
-                        className="p-2 w-25 bg-white rounded-lg border-2 border-transparent hover:border-[#5540d6] hover:text-[#5540d6] transition-colors duration-300"
+                        className={`p-2 w-25 rounded-lg border-2 transition-colors duration-300 
+            ${isDarkMode
+                                ? 'bg-[#252128] text-[#6B7280] border-transparent hover:bg-white hover:text-[#3730A3] hover:border-[#3730A3]'
+                                : 'bg-white text-black border-transparent hover:border-[#5540d6] hover:text-[#5540d6]'
+                            }`}
                     >
                         {currentLanguage.header.buttons.hireMe}
                     </button>
                 </div>
+
             </div>
         </header>
     );
