@@ -1,7 +1,8 @@
 const data = {
     tr: {
         header: {
-            darkMode: "KARANLIK MOD",
+            darkMode: "AYDINLIK MOD",
+            lightMode: "KARANLIK MOD",
             language: {
                 turkish: "ENGLISH",
                 switch: "SWITCH",
@@ -125,7 +126,8 @@ const data = {
     },
     en: {
         header: {
-            darkMode: "DARK MODE",
+            darkMode: "LIGHT MODE",
+            lightMode: "DARK MODE",
             language: {
                 turkish: "TÜRKÇE'YE",
                 switch: " GEÇ",

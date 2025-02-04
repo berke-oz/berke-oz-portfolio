@@ -6,7 +6,7 @@ const Projects = () => {
     const projects = data[language].projects.projectsList;
 
     return (
-        <div className={`container mx-auto p-8 ${isDarkMode ? 'bg-[#252128]' : 'bg-white-100'}`}>
+        <div id="projects" className={`container mx-auto p-8 ${isDarkMode ? 'bg-[#252128]' : 'bg-white-100'}`}>
             <h2 className={`text-[48px] font-semibold mb-8 pl-20 ${isDarkMode ? 'text-[#CFCBFF]' : 'text-gray-900'}`}>{data[language].projects.title}</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projects.map((project, index) => (
@@ -33,7 +33,7 @@ const Projects = () => {
                                 href={project.github}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className={`text-[#E1E1FF] hover:underline`}
+                                className={` ${isDarkMode ? 'text-[#E1E1FF]' : 'text-blue-800 '}`}
                             >
                                 GitHub
                             </a>
@@ -41,7 +41,7 @@ const Projects = () => {
                                 href={project.website}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className={`text-[#E1E1FF] hover:underline`}
+                                className={` ${isDarkMode ? 'text-[#E1E1FF]' : 'text-blue-800 '}`}
                             >
                                 Website
                             </a>

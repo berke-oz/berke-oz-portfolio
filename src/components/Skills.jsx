@@ -6,7 +6,7 @@ const Skills = () => {
     const currentLanguage = data[language].skills;
 
     return (
-        <section className={`text-left pr-48 ${isDarkMode ? 'bg-[#252128]' : 'bg-white-100'}`}>
+        <section id="skills" className={`text-left pr-48 ${isDarkMode ? 'bg-[#252128]' : 'bg-white-100'}`}>
             <div className="max-w-6xl mx-auto px-6">
 
                 <h2 className={`text-[48px] font-semibold mb-8 ${isDarkMode ? `text-[#AEBCCF]` : `text-black-500`}`}>

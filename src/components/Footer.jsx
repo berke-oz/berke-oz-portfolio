@@ -5,7 +5,7 @@ export default function Footer() {
     const footerData = data[language].footer;
 
     return (
-        <footer className={`flex flex-col items-center justify-between p-10 md:flex-row ${isDarkMode ? 'bg-[#141414]' : 'bg-[#F9F9F9]'} shadow-md text-lg h-90`}>
+        <footer id='footer' className={`flex flex-col items-center justify-between p-10 md:flex-row ${isDarkMode ? 'bg-[#141414]' : 'bg-[#F9F9F9]'} shadow-md text-lg h-90`}>
             <div className="text-center md:text-left">
                 <p className={`text-4xl font-semibold ${isDarkMode ? 'text-[#AEBCCF]' : 'text-gray-900'} pl-18`}>
                     {footerData.text}

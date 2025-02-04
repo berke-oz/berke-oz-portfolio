@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';
 
@@ -11,10 +9,8 @@ const Header = () => {
     return (
         <header className={`p-7 ${isDarkMode ? 'bg-[#252128]' : 'bg-white text-gray-900'} pr-45`}>
             <div className="container mx-auto flex flex-col">
-
                 <div className="flex justify-end items-center font-mono font-bold text-gray-600 pt-[23px]">
                     <div className="flex items-center space-x-1">
-
                         <div className="flex items-center space-x-2">
                             <div
                                 className="w-14 h-8 flex items-center rounded-full p-1"
@@ -26,13 +22,9 @@ const Header = () => {
                                     style={{ backgroundColor: '#FFE86E' }}
                                 ></div>
                             </div>
-                            <span>{currentLanguage.header.darkMode}</span>
+                            <span>{isDarkMode ? currentLanguage.header.darkMode : currentLanguage.header.lightMode}</span>
                         </div>
-
-
                         <span>|</span>
-
-
                         <div className="flex items-center gap-1">
                             <span
                                 className="hover:text-blue-700 transition-colors duration-300"
@@ -47,9 +39,9 @@ const Header = () => {
                     </div>
                 </div>
 
-
                 <div className="ml-auto flex items-center pt-8 space-x-8">
-                    <button
+                    <a
+                        href="#skills"
                         className={`p-2 w-25 rounded-lg border-2 transition-colors duration-300 
             ${isDarkMode
                                 ? 'bg-[#252128] text-[#6B7280] border-transparent hover:bg-white hover:text-[#3730A3] hover:border-[#3730A3]'
@@ -57,8 +49,10 @@ const Header = () => {
                             }`}
                     >
                         {currentLanguage.header.buttons.skills}
-                    </button>
-                    <button
+                    </a>
+
+                    <a
+                        href="#projects"
                         className={`p-2 w-25 rounded-lg border-2 transition-colors duration-300 
             ${isDarkMode
                                 ? 'bg-[#252128] text-[#6B7280] border-transparent hover:bg-white hover:text-[#3730A3] hover:border-[#3730A3]'
@@ -66,8 +60,10 @@ const Header = () => {
                             }`}
                     >
                         {currentLanguage.header.buttons.projects}
-                    </button>
-                    <button
+                    </a>
+
+                    <a
+                        href="#footer"
                         className={`p-2 w-25 rounded-lg border-2 transition-colors duration-300 
             ${isDarkMode
                                 ? 'bg-[#252128] text-[#6B7280] border-transparent hover:bg-white hover:text-[#3730A3] hover:border-[#3730A3]'
@@ -75,8 +71,9 @@ const Header = () => {
                             }`}
                     >
                         {currentLanguage.header.buttons.hireMe}
-                    </button>
+                    </a>
                 </div>
+
 
             </div>
         </header>
