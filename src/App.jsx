@@ -1,7 +1,10 @@
 
 import './App.css'
 import Footer from './components/Footer'
-import Header from './components/header'
+import Header from './components/Header'
+
+
+
 import Hero from './components/Hero'
 import Profile from './components/Profile'
 import Projects from './components/Projects'
