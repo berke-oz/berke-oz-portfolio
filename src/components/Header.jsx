@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <header className={`p-7 ${isDarkMode ? 'bg-[#252128]' : 'bg-white text-gray-900'} pr-45`}>
             <div className="container mx-auto flex flex-col">
-                {/* Responsive olmayan düzen (normal website) */}
+
                 <div className="hidden sm:flex justify-end items-center font-mono font-bold text-gray-600 pt-[23px]">
                     <div className="flex items-center space-x-1">
                         <div className="flex items-center space-x-2">
@@ -40,7 +40,7 @@ const Header = () => {
                     </div>
                 </div>
 
-                {/* Responsive düzen (mobil ve tablet) */}
+
                 <div className="flex sm:hidden justify-center items-center font-mono font-bold text-gray-600 pt-[23px] space-x-4">
                     <div className="flex items-center space-x-2">
                         <div
@@ -69,7 +69,8 @@ const Header = () => {
                     </div>
                 </div>
 
-                <div className="ml-auto flex items-center pt-8 space-x-8 justify-center w-full mt-8">
+
+                <div className="ml-auto flex items-center pt-8 space-x-8 justify-end w-full mt-8">
                     <a
                         href="#skills"
                         className={`p-2 w-25 rounded-lg border-2 transition-colors duration-300 
