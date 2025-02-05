@@ -9,7 +9,8 @@ const Header = () => {
     return (
         <header className={`p-7 ${isDarkMode ? 'bg-[#252128]' : 'bg-white text-gray-900'} pr-45`}>
             <div className="container mx-auto flex flex-col">
-                <div className="flex justify-end items-center font-mono font-bold text-gray-600 pt-[23px]">
+                {/* Responsive olmayan düzen (normal website) */}
+                <div className="hidden sm:flex justify-end items-center font-mono font-bold text-gray-600 pt-[23px]">
                     <div className="flex items-center space-x-1">
                         <div className="flex items-center space-x-2">
                             <div
@@ -39,7 +40,36 @@ const Header = () => {
                     </div>
                 </div>
 
-                <div className="ml-auto flex items-center pt-8 space-x-8">
+                {/* Responsive düzen (mobil ve tablet) */}
+                <div className="flex sm:hidden justify-center items-center font-mono font-bold text-gray-600 pt-[23px] space-x-4">
+                    <div className="flex items-center space-x-2">
+                        <div
+                            className="w-14 h-8 flex items-center rounded-full p-1"
+                            style={{ backgroundColor: '#4731D3' }}
+                            onClick={toggleDarkMode}
+                        >
+                            <div
+                                className={`w-6 h-6 rounded-full shadow-md transform ${isDarkMode ? 'translate-x-6' : 'translate-x-0'}`}
+                                style={{ backgroundColor: '#FFE86E' }}
+                            ></div>
+                        </div>
+                        <span>{isDarkMode ? currentLanguage.header.darkMode : currentLanguage.header.lightMode}</span>
+                    </div>
+                    <span>|</span>
+                    <div className="flex items-center gap-1">
+                        <span
+                            className="hover:text-blue-700 transition-colors duration-300"
+                            style={{ color: '#4731D3' }}
+                        >
+                            {currentLanguage.header.language.turkish}
+                        </span>
+                        <button onClick={toggleLanguage}>
+                            {currentLanguage.header.language.switch}
+                        </button>
+                    </div>
+                </div>
+
+                <div className="ml-auto flex items-center pt-8 space-x-8 justify-center w-full mt-8">
                     <a
                         href="#skills"
                         className={`p-2 w-25 rounded-lg border-2 transition-colors duration-300 
@@ -73,8 +103,6 @@ const Header = () => {
                         {currentLanguage.header.buttons.hireMe}
                     </a>
                 </div>
-
-
             </div>
         </header>
     );

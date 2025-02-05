@@ -63,7 +63,8 @@ const Profile = () => {
                 </div>
             </div>
 
-            <div className="border-b-2 w-full sm:w-[1300px] mx-auto border-black-400 mt-12"></div>
+            <div className="border-b-2 w-full sm:w-[1300px] mx-auto border-black-400 mt-36"></div>
+
         </section>
     );
 };
