@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <header className={`p-7 ${isDarkMode ? 'bg-[#252128]' : 'bg-white text-gray-900'} pr-45`}>
             <div className="container mx-auto flex flex-col">
-
+                {/* Normal web tasarımı (Desktop) */}
                 <div className="hidden sm:flex justify-end items-center font-mono font-bold text-gray-600 pt-[23px]">
                     <div className="flex items-center space-x-1">
                         <div className="flex items-center space-x-2">
